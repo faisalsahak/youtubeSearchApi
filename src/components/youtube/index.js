@@ -5,6 +5,7 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './SearchBar';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
+import Nav from '../Nav';
 
 const API_KEY = 'AIzaSyC14nU_wOQGIF6uAibzh3zguF4PCnD0DeE';
 
@@ -16,7 +17,7 @@ class App extends Component {
       videos: [],
       selectedVideo: null
     };
-    this.videoSearch('computer science');
+    this.videoSearch('funny videos');// does an initial search
   }
 
   videoSearch = (term) => {
@@ -32,7 +33,9 @@ class App extends Component {
     const videoSearch = _.debounce(term => { this.videoSearch(term) }, 300);
     return (
       <div>
+        <Nav />
         <SearchBar onSearchTermChange={videoSearch} />
+        <br/>
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
           onVideoSelect={selectedVideo => this.setState({selectedVideo})}
@@ -43,6 +46,3 @@ class App extends Component {
 }
 
 export default App;
-
-//Take this component's generated HTML and put it on the page (DOM).
-// ReactDOM.render(<App />, document.getElementById('app'));

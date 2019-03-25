@@ -4,8 +4,8 @@ import MovieResults from './containers/MovieResults';
 import MovieDetails from "./containers/MovieDetails";
 import youtube from "./components/youtube/index"
 
-// import 'bootstrap/dist/css/bootstrap.css'
-// import 'bootstrap/dist/css/bootstrap-theme.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap-theme.css'
 
 
 

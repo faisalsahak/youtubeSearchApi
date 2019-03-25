@@ -16,7 +16,7 @@ class SearchBar extends Component {
       <div className="search-bar">
         <input
           className="form-control"
-          onChange={event => this.handleInputChange(event.target.value)} placeholder="Type something..."/>
+          onChange={event => this.handleInputChange(event.target.value)} placeholder="Search Youtube.."/>
       </div>
     );
   }

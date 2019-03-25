@@ -8,7 +8,7 @@ const MovieInfo = (props) => {
             <img src={'https://image.tmdb.org/t/p/w342/' + props.movie.poster_path} alt="movie_img"/>
             <div id={'texto'}> <h1>{props.movie.title}</h1>
                 <h5 id={'subtitulo'}>{props.movie.tagline}</h5>
-                <h3> SYNOPSIS</h3>
+                <h2> PLOT</h2>
                 <h4>{props.movie.overview}</h4>
                 <h6 style={{marginTop:'20px'}}>RELEASE DATE:</h6> {props.movie.release_date}
 

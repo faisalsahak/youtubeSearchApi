@@ -13,6 +13,7 @@ const CastItem = (props) => {
     }
 
 
+    // console.log(props)
     return (
         <div className={'cast'} >
             <div className='div_imagem'>
