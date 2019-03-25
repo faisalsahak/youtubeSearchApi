@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import _ from 'lodash';
 import YTSearch from 'youtube-api-search';
-import SearchBar from './components/SearchBar';
-import VideoList from './components/VideoList';
-import VideoDetail from './components/VideoDetail';
+import SearchBar from './SearchBar';
+import VideoList from './VideoList';
+import VideoDetail from './VideoDetail';
 
 const API_KEY = 'AIzaSyC14nU_wOQGIF6uAibzh3zguF4PCnD0DeE';
 
@@ -42,5 +42,7 @@ class App extends Component {
   }
 }
 
+export default App;
+
 //Take this component's generated HTML and put it on the page (DOM).
-ReactDOM.render(<App />, document.getElementById('app'));
+// ReactDOM.render(<App />, document.getElementById('app'));

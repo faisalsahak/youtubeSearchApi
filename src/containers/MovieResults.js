@@ -9,8 +9,6 @@ const api = "https://api.themoviedb.org/3/discover/movie";
 export const API_KEY_ALT = '?api_key=2039021d2cc949065ad9fb862ad9fbb6';
 
 class MovieResults extends Component {
-
-
     constructor(props) {
 
         super(props);
